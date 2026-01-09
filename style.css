@@ -4,98 +4,176 @@
 #skills,
 #portfolio,
 #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
 }
 #about h2,
 #skills h2,
 #portfolio h2,
 #contact h2 {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 #contact {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* header */
+header {
+  position: relative;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* Navigation centrée */
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbar-nav.mx-auto {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Sélecteur de langue */
+.language-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.lang-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.lang-btn.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  font-weight: bold;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 991px) {
+  .header-container {
+    grid-template-columns: 1fr auto;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .navbar-collapse {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+
+  .language-selector {
+    order: 2;
+  }
+
+  .navbar-nav.mx-auto {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: #5b5b5b;
+  background-color: #5b5b5b;
 }
 
 /* hero background image */
 .bgimage {
-    height: 100vh;
-    max-height: 900px;
-    background: url("images/image1.jpg");
-    background-size: cover;
-    position: relative;
+  height: 100vh;
+  max-height: 900px;
+  background: url("images/image1.jpg");
+  background-size: cover;
+  position: relative;
 }
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 .hero_desc {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /* about */
 .imageAboutPage {
-    width: 100%;
+  width: 100%;
 }
 .imageAboutPage {
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* skills */
 .skillsText.card {
-    height: 350px;
-    cursor: pointer;
+  height: 350px;
+  cursor: pointer;
 }
 .skillsText img {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
 }
 #skills p {
-    text-align: center;
+  text-align: center;
 }
 .skillsIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
 }
 .card-title {
-    text-align: center;
+  text-align: center;
 }
 .card:hover .skillsIcon {
-    color: #008000;
+  color: #008000;
 }
 .skillsText:hover {
-    border: 1px solid #008000;
+  border: 1px solid #008000;
 }
 
 /* portfolio */
 #portfolio p {
-    text-align: center;
+  text-align: center;
 }
 
 /* contact */
 .contactColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contactColumn i {
-    color: #198754;
+  color: #198754;
 }
 
 /* footer */
