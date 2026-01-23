@@ -87,7 +87,7 @@ function createPortfolioFromJSON() {
                 `;
 
                 // Append the card to the current row
-               // CORRECTION ERREUR DE FRAPPE APENCHILD
+                // CORRECTION ERREUR DE FRAPPE APENCHILD
                 row.appendChild(card);
 
                 // If the index is a multiple of 3 or it's the last element, create a new row
@@ -100,8 +100,31 @@ function createPortfolioFromJSON() {
         });
 }
 
+// Function to handle language switching
+function handleLanguageSwitch() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+
+    langButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const lang = this.getAttribute('data-lang');
+
+            // Remove active class from all buttons
+            langButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            // Translate the page
+            if (typeof translatePage === 'function') {
+                translatePage(lang);
+            }
+        });
+    });
+}
+
 // Call the functions to execute the code
 handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();
+handleLanguageSwitch();
