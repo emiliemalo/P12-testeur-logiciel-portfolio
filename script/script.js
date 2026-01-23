@@ -23,6 +23,23 @@ function handleNavbarCollapse() {
     });
 }
 
+// Function to get Font Awesome icon for each skill
+function getSkillIcon(title) {
+    const icons = {
+        "Tests end-to-end": '<i class="fa-solid fa-vial skill-icon"></i>',
+        "Cypress": '<i class="fa-solid fa-vial skill-icon"></i>',
+        "Postman": '<i class="fa-solid fa-rocket skill-icon"></i>',
+        "Xray": '<i class="fa-solid fa-list-check skill-icon"></i>',
+        "HTML - CSS": '<i class="fa-brands fa-html5 skill-icon"></i>',
+        "JavaScript": '<i class="fa-brands fa-js skill-icon"></i>',
+        "React": '<i class="fa-brands fa-react skill-icon"></i>',
+        "Gestion de projet QA": '<i class="fa-solid fa-clipboard-list skill-icon"></i>',
+        "Debug & Optimisation": '<i class="fa-solid fa-bug skill-icon"></i>',
+        "Stratégies de test": '<i class="fa-solid fa-flask skill-icon"></i>'
+    };
+    return icons[title] || '<i class="fa-solid fa-code skill-icon"></i>';
+}
+
 // Function to dynamically create HTML elements from the JSON file
 function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
@@ -37,10 +54,13 @@ function createSkillsFromJSON() {
             data.forEach((item, index) => {
                 const card = document.createElement("div");
                 card.classList.add("col-lg-4", "mt-4");
+                const icon = getSkillIcon(item.title);
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
-                            <img src="./images/${item.image}" alt="${item.title} - ${item.text.substring(0, 100)}" />
+                            <div class="skill-icon-container">
+                                ${icon}
+                            </div>
                             <h3 class="card-title mt-3">${item.title}</h3>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>

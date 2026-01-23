@@ -327,16 +327,25 @@ header {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.skillsText img {
-  width: 100%;
+.skill-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 150px;
-  object-fit: contain;
   padding: 1rem;
-  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
 }
 
-.skillsText.card:hover img {
-  transform: scale(1.1);
+.skill-icon {
+  font-size: 5rem;
+  color: #1a237e;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(26, 35, 126, 0.2));
+}
+
+.skillsText.card:hover .skill-icon {
+  transform: scale(1.15) translateY(-5px);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
 }
 
 #skills p {
