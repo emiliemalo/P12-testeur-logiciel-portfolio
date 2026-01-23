@@ -31,29 +31,41 @@ const translations = {
 
     // Skills translations mapping
     skills: {
+        "Tests end-to-end": {
+            title: "End-to-end Testing",
+            text: "Automate end-to-end tests to validate user journeys on web applications."
+        },
+        "Postman": {
+            title: "Postman",
+            text: "Test REST APIs through requests, verification scripts and automated collections."
+        },
+        "Xray": {
+            title: "Xray",
+            text: "Manage test cases in Jira: design, execution, campaign tracking and requirements coverage."
+        },
         "HTML - CSS": {
             title: "HTML - CSS",
-            text: "Integration of responsive and accessible interfaces, use of Figma mockups, development of CSS animations"
+            text: "Integrate responsive web interfaces from mockups, with CSS animations and accessibility."
         },
-        "javascript": {
+        "JavaScript": {
             title: "JavaScript",
-            text: "DOM manipulation, creation of dynamic elements, form data management"
+            text: "Create dynamic interactions and manipulate the DOM in modern web applications."
         },
         "React": {
             title: "React",
-            text: "Creating React applications, creating components and managing their state"
+            text: "Develop reusable components and manage their state in reactive interfaces."
         },
-        "Gestion de projet": {
-            title: "Project Management",
-            text: "Analyzing client needs, defining a technical solution that meets functional requirements, project planning"
+        "Gestion de projet QA": {
+            title: "QA Project Management",
+            text: "Organize test phases, plan sprints, and collaborate with product and dev teams."
         },
-        "Optimisation et debug": {
-            title: "Optimization and Debug",
-            text: "Identifying anomalies and fixing an existing site, SEO and performance optimization, and publishing a site online"
+        "Debug & Optimisation": {
+            title: "Debug & Optimization",
+            text: "Identify bugs, optimize SEO, improve performance and publish web deliverables."
         },
-        "Test": {
-            title: "Test",
-            text: "Exploratory, unit and integration tests, defining a test strategy and writing an acceptance test plan, automating E2E and API tests"
+        "Stratégies de test": {
+            title: "Test Strategies",
+            text: "Design and execute functional, exploratory, API, unit, and regression tests."
         }
     }
 };
