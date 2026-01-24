@@ -122,11 +122,6 @@ function translatePage(lang) {
         document.documentElement.lang = 'en';
         currentLanguage = 'en';
 
-        // Update CV link
-        if (typeof updateCVLink === 'function') {
-            updateCVLink('en');
-        }
-
         // Translate dynamic content after a short delay
         setTimeout(translateDynamicContent, 1000);
     } else {
@@ -171,11 +166,6 @@ function translatePage(lang) {
 
         document.documentElement.lang = 'fr';
         currentLanguage = 'fr';
-
-        // Update CV link
-        if (typeof updateCVLink === 'function') {
-            updateCVLink('fr');
-        }
     }
 }
 
