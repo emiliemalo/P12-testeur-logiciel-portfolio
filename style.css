@@ -514,9 +514,16 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #1a237e;
   font-size: 1.8rem;
+  font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 16px rgba(26, 35, 126, 0.2);
   text-decoration: none;
+}
+
+.footer-icon-link span {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .footer-icon-link:hover {

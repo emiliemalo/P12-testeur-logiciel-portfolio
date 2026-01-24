@@ -73,12 +73,16 @@ const translations = {
 // Function to translate the page
 function translatePage(lang) {
     if (lang === 'en') {
-        // Update navigation
-        document.querySelector('a[href="#home"]').textContent = translations["nav-accueil"];
-        document.querySelector('a[href="#about"]').textContent = translations["nav-about"];
-        document.querySelector('a[href="#skills"]').textContent = translations["nav-skills"];
-        document.querySelector('a[href="#portfolio"]').textContent = translations["nav-portfolio"];
-        document.querySelector('a[href="#contact"]').textContent = translations["nav-contact"];
+        // Update navigation (only links in navbar-nav, not navbar-brand)
+        const navLinks = document.querySelectorAll('.navbar-nav a');
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === '#home') link.textContent = translations["nav-accueil"];
+            if (href === '#about') link.textContent = translations["nav-about"];
+            if (href === '#skills') link.textContent = translations["nav-skills"];
+            if (href === '#portfolio') link.textContent = translations["nav-portfolio"];
+            if (href === '#contact') link.textContent = translations["nav-contact"];
+        });
 
         // Update hero section
         document.querySelector('.hero_title').textContent = translations["hero-title"];
@@ -118,15 +122,24 @@ function translatePage(lang) {
         document.documentElement.lang = 'en';
         currentLanguage = 'en';
 
+        // Update CV link
+        if (typeof updateCVLink === 'function') {
+            updateCVLink('en');
+        }
+
         // Translate dynamic content after a short delay
         setTimeout(translateDynamicContent, 1000);
     } else {
-        // Reset to French
-        document.querySelector('a[href="#home"]').textContent = "Accueil";
-        document.querySelector('a[href="#about"]').textContent = "A propos";
-        document.querySelector('a[href="#skills"]').textContent = "Compétences";
-        document.querySelector('a[href="#portfolio"]').textContent = "Portfolio";
-        document.querySelector('a[href="#contact"]').textContent = "Contact";
+        // Reset to French (only links in navbar-nav, not navbar-brand)
+        const navLinks = document.querySelectorAll('.navbar-nav a');
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === '#home') link.textContent = "Accueil";
+            if (href === '#about') link.textContent = "A propos";
+            if (href === '#skills') link.textContent = "Compétences";
+            if (href === '#portfolio') link.textContent = "Portfolio";
+            if (href === '#contact') link.textContent = "Contact";
+        });
 
         document.querySelector('.hero_title').textContent = "Salut, moi c'est Emilie";
         document.querySelector('.hero_desc').textContent = "Testeur logiciel junior";
@@ -158,6 +171,11 @@ function translatePage(lang) {
 
         document.documentElement.lang = 'fr';
         currentLanguage = 'fr';
+
+        // Update CV link
+        if (typeof updateCVLink === 'function') {
+            updateCVLink('fr');
+        }
     }
 }
 
