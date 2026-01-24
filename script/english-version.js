@@ -8,7 +8,7 @@ const translations = {
     "nav-contact": "Contact",
 
     // Hero section
-    "hero-title": "Hi, I'm Emilie",
+    "hero-title": "Hi ! I'm Emilie",
     "hero-desc": "Junior Software Tester",
 
     // About section
