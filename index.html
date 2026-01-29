@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
             <div class="container-fluid header-container">
                 <!-- Titre à gauche -->
-                <a class="navbar-brand" href="#">Emilie MALO</a>
+                <a class="navbar-brand" href="#home" aria-label="Retour à l'accueil - Emilie MALO">Emilie MALO</a>
                 
                 <!-- Bouton toggle pour mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,12 +60,14 @@
     </header>
 
     <!-- main banner -->
+    <main>
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h1 class="hero_title">Salut, moi c'est Emilie</h1>
-                    <p class="hero_desc">Testeur logiciel junior</p>
+                    <h1 class="hero_title">Salut ! moi c'est Emilie</h1>
+                    <h2 class="hero_desc">Testeur logiciel junior</h2   
+                        >
                 </div>
             </div>
         </div>
@@ -74,47 +76,14 @@
     <!-- about section-->
     <section id="about">
         <div class="container mt-4 pt-4">
-            <h2 class="text-center">A propos</h2>
+            <h2 class="text-center">A propos de moi </h2>
             <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/person.png" class="imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged
-
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Nom: Prénom nom</li>
-                                <li>Age: 42</li>
-                                <li>xxx: xxx xxx</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Nom: Prénom nom</li>
-                                <li>Age: 42</li>
-                                <li>xxx: xxx xxx</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged.
-                        </p>
-                    </div>
+                <div class="col-lg-12">
+                    <p>En reconversion professionnelle vers le développement web, je me spécialise dans le test logiciel en alternance.
+                    Je maîtrise l'automatisation des tests end-to-end, les tests API, la gestion des cas de test et le développement web.</p>
+                    <p>J'ai participé à des projets variés : sites écoresponsables, plateformes événementielles et applications financières, en pilotant les campagnes QA et la stratégie de tests.</p>
+                    <p>J'interviens sur le debug, l'optimisation et l'accessibilité, garantissant la qualité et la performance des livrables web.</p>
+                    <p>J'ai également contribué à l'implémentation de l'IA dans le SaaS de mon entreprise, alliant innovation et qualité logicielle.</p>
                 </div>
             </div>
     </section>
@@ -136,33 +105,23 @@
     <section id="contact">
         <div class="container mt-3 contactContent">
             <h2 class="text-center">Contactez-moi</h2>
-            <div class="row">
-                <div class="col-lg-4 mt-4 contactColumn">
-                    <a href="https://github.com/emiliemalo" target="_blank" rel="noopener noreferrer" class="contact-icon-link" aria-label="GitHub">
-                        <i class="fa-brands fa-github fa-4x"></i>
-                    </a>
-                    <h4>GitHub</h4>
-                    <p>Mon profil GitHub</p>
-                </div>
-                <div class="col-lg-4 mt-4 contactColumn">
-                    <a href="mailto:emiliemalo261@gmail.com" class="contact-icon-link">
-                        <i class="fa-regular fa-envelope fa-4x"></i>
-                    </a>
-                    <h4>Adresse email</h4>
-                    <p>prénom.nom@gmail.com</p>
-                </div>
-                <div class="col-lg-4 mt-4 contactColumn">
-                    <a href="https://www.linkedin.com/in/emilie-patricia-malo/" target="_blank" rel="noopener noreferrer" class="contact-icon-link">
-                        <i class="fa-brands fa-linkedin-in fa-4x"></i>
-                    </a>
-                    <h4>LinkedIn</h4>
-                    <p>LinkedIn Name</p>
-                </div>
+            <div class="footer-icons">
+                <a href="https://github.com/emiliemalo" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Visiter mon profil GitHub - emiliemalo">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span class="visually-hidden">GitHub</span>
+                </a>
+                <span class="footer-email-text">emiliemalo261@gmail.com</span>
+                <a href="https://www.linkedin.com/in/emilie-patricia-malo/" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Visiter mon profil LinkedIn - Emilie Patricia Malo">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    <span class="visually-hidden">LinkedIn</span>
+                </a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- load javascript after loading all html content -->
+    <script src="script/english-version.js"></script>
     <script src="script/script.js"></script>
 
 </body>
