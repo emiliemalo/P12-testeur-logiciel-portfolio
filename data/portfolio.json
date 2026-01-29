@@ -1,15 +1,15 @@
 [
     {
-        "image": "image1.png",
-        "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "image": "ecoblissbath.png",
+        "title": "Eco bliss bath",
+        "text": "Automatisation de tests fonctionnels pour un site web écoresponsable. Analyse de tests manuels, scripts Cypress (JavaScript) et reporting QA.",
+        "link": "https://github.com/emiliemalo/Eco-Bliss-Bath-V2"
     },
     {
         "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "title": "724 events",
+        "text": "Campagne de tests fonctionnels et exploratoires sur un site événementiel. Environnement Docker, suivi des bugs sur JIRA et reporting QA.",
+        "link": "https://github.com/emiliemalo/https---github.com-emiliemalo-P5-Campagne-de-test-/tree/main/Menez_une_campagne_de_tests_Malo_Emilie"
     },
     {
         "image": "image3.png",
