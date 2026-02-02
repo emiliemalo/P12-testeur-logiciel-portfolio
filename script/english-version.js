@@ -22,7 +22,7 @@ function applyEnglishTranslations(t) {
 
     const aboutH2 = document.querySelector('#about h2');
     if (aboutH2) aboutH2.textContent = t["about-title"];
-    const aboutParagraphs = document.querySelectorAll('#about .col-lg-8 p');
+    const aboutParagraphs = document.querySelectorAll('#about .col-lg-12 p');
     if (aboutParagraphs[0]) aboutParagraphs[0].textContent = t["about-p1"];
     if (aboutParagraphs[1]) aboutParagraphs[1].textContent = t["about-p2"];
     if (aboutParagraphs[2]) aboutParagraphs[2].textContent = t["about-p3"];
@@ -95,7 +95,7 @@ function applyFrenchContent() {
 
     const aboutH2 = document.querySelector('#about h2');
     if (aboutH2) aboutH2.textContent = "A propos de moi";
-    const aboutParagraphs = document.querySelectorAll('#about .col-lg-8 p');
+    const aboutParagraphs = document.querySelectorAll('#about .col-lg-12 p');
     if (aboutParagraphs[0]) aboutParagraphs[0].textContent = "En reconversion professionnelle vers le développement web, je me spécialise dans le test logiciel en alternance. Je maîtrise l'automatisation des tests end-to-end, les tests API, la gestion des cas de test et le développement web.";
     if (aboutParagraphs[1]) aboutParagraphs[1].textContent = "J'ai participé à des projets variés : sites écoresponsables, plateformes événementielles et applications financières, en pilotant les campagnes QA et la stratégie de tests.";
     if (aboutParagraphs[2]) aboutParagraphs[2].textContent = "J'interviens sur le debug, l'optimisation et l'accessibilité, garantissant la qualité et la performance des livrables web.";

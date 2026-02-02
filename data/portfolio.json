@@ -1,6 +1,6 @@
 [
     {
-        "image": "ecoblissbath.png",
+        "image": "ecoblissbath.jpg",
         "title": "Eco bliss bath",
         "text": "Automatisation de tests fonctionnels pour un site web écoresponsable. Analyse des tests manuels existants et création de scripts avec Cypress (JavaScript). Reporting QA et suivi de la qualité dans le cadre d'une formation externe.",
         "link": "https://github.com/emiliemalo/Eco-Bliss-Bath-V2"
@@ -12,7 +12,7 @@
         "link": "https://github.com/emiliemalo/https---github.com-emiliemalo-P5-Campagne-de-test-/tree/main/Menez_une_campagne_de_tests_Malo_Emilie"
     },
     {
-        "image": "payforge.png",
+        "image": "payforgnew.jpg",
         "title": "Payforge",
         "text": "Pilotage QA et définition de la stratégie de tests pour une application financière Agile. Couverture des exigences, tests par sprint et campagnes de non-régression sur fonctionnalités critiques.",
         "link": "https://github.com/emiliemalo/P11-Strate-gie-de-test/tree/main"
